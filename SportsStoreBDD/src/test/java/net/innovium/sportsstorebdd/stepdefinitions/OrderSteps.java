@@ -37,16 +37,19 @@ public class OrderSteps {
 
     @When("User clicks on Chess category")
     public  void user_clicks_on_chess_category(){
+
         homePage.selectCategory("Chess");
     }
 
     @And("User adds Think cap to the cart")
     public  void  user_adds_thinking_cap_to_the_cart(){
+
         homePage.addtoCart(1);
     }
 
     @And("User proceeds to checkout")
     public void user_proceeds_to_checkout(){
+
         homePage.goToCheckout();
     }
 
